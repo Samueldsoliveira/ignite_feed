@@ -2,7 +2,7 @@ import '../global.css'
 import { AvatarFeed } from './Avatar'
 import { Comment } from './Comment'
 
-export function Post () {
+export function Post (props) {
     return (
         <article className="bg-gray-800 rounded-lg p-10 post-margin">
             <header className=''>
