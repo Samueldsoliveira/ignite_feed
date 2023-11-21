@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:focus {
+    outline: transparent;
+    box-shadow: 0 0 0 2px rgb(34 197 94);
+}
+
+body {
+    -webkit-font-smoothing: antialiassed;
+    background-color: #121214;
+    color: #C4C4CC;
+}
+
+body, input, textarea, button {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 256px 1fr;
+}
+
+.post-margin + .post-margin{
+    margin-top: 2rem;
+}
+
+.post-margin p{
+    margin-top: 1rem;
+}
+
+.post-margin a{
+    font-weight: bold;
+    color: rgb(22 163 74);
+}
+
+.post-margin a:hover{
+    color: rgb(74 222 128);
+}
+
+.post-margin > header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.post-margin > header time{
+    font-size: 0.875rem;
+    color: rgb(156 163 175);
+}
+
+.comment-effect footer{
+    visibility: hidden;
+    max-height: 0;
+}
+
+.comment-effect:focus-within footer{
+    visibility: visible;
+    max-height: none;
+}
+
+.point-thumbs span::before{
+    content: "\2022";
+    padding: 0 0.25rem;
+}
